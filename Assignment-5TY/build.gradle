@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group = 'CSC133snsTY'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.lwjgl:lwjgl:3.3.6'
+    implementation 'org.lwjgl:lwjgl-glfw:3.3.6'
+    implementation 'org.lwjgl:lwjgl-opengl:3.3.6'
+    implementation 'org.lwjgl:lwjgl-stb:3.3.6' // Optional, for text rendering
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
