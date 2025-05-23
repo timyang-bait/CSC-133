@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pkgCSC133test.TYAssignment9DriverTest_1" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-05-09T05:20:04" hostname="CSUS-SL-38165" time="0.027">
+  <properties/>
+  <testcase name="testGoLArrayFromBooleanGrid()" classname="pkgCSC133test.TYAssignment9DriverTest_1" time="0.027"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

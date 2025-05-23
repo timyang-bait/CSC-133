@@ -1,0 +1,44 @@
+plugins {
+    id 'java'
+}
+
+group = 'CSC133snsTY'
+version = '1.0-SNAPSHOT'
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java']
+        }
+        resources {
+            srcDirs = ['src/main/resources']  // This is where your resources folder is located
+        }
+    }
+}
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.lwjgl:lwjgl:3.3.6'
+    implementation 'org.lwjgl:lwjgl-glfw:3.3.6'
+    implementation 'org.lwjgl:lwjgl-opengl:3.3.6'
+    implementation 'org.lwjgl:lwjgl-stb:3.3.6' // Optional, for text rendering
+    implementation 'org.joml:joml:1.10.5' // Add JOML dependency
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+dependencies {
+    implementation "org.lwjgl:lwjgl:3.3.2"
+    implementation "org.lwjgl:lwjgl-glfw:3.3.2"
+    implementation "org.lwjgl:lwjgl-opengl:3.3.2"
+
+    runtimeOnly "org.lwjgl:lwjgl:3.3.2:natives-windows"
+    runtimeOnly "org.lwjgl:lwjgl-glfw:3.3.2:natives-windows"
+    runtimeOnly "org.lwjgl:lwjgl-opengl:3.3.2:natives-windows"
+    dependencies {
+        implementation 'org.joml:joml:1.10.0' // Use the correct version
+    }
+}
+test {
+    useJUnitPlatform()
+}
